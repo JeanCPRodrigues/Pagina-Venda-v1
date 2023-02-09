@@ -8,9 +8,25 @@
 
 /* RESET ALL STYLE */
 * {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin: 0px;
     padding: 0px;
+    cursor: default;
+}
+
+/* VARIABLE OF THE AMBIENT */
+:root {
+    --black-primary: #343a40;
+
+    --white-primary: #fff;
+
+    --yellow-primary: #ffc107;
+
+    --blue-primary: #0a58ca;
+
+    /* SIZE DEFAULT */
+    --size-default: 10px;
+    --seze-default-border: 5px;
 }
 
 /* RESET ALL STYLE H>* */
@@ -28,9 +44,9 @@ img {
     width: 100%;
 }
 
-/* VARIABLE OF THE AMBIENT */
-:root {
-    --white-primary: #fff;
+/* STYLE ICON STAR */
+.bi-stars {
+    color: var(--yellow-primary);
 }
 
 /* DEFINE ALL STYLE IN BODY */
@@ -60,4 +76,60 @@ section {
     width: calc(100% - 50%);
     height: 70%;
     background: var(--white-primary);
+}
+
+/* MASTER .COL H1 + ICON */
+section > .container:nth-child(1) > .row:nth-child(1) > div:nth-child(1) {
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--size-default);
+    margin: 20px 0 10px 0;
+}
+/* .COL H1 + ICON */
+section > .container:nth-child(1) > .row:nth-child(1) > div:nth-child(1) > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    padding: var(--size-default);
+    background: var(--blue-primary);
+    border-radius: var(--seze-default-border);
+}
+/* .COL H1 */
+section > .container:nth-child(1) > .row:nth-child(1) > div:nth-child(1) > div > h1 {
+    color: var(--black-primary);
+    font-size: max(1.5vw, 10pt);
+    color: var(--white-primary);
+    font-weight: 600;
+}
+
+/* MASTER .ROW2 */
+section > .container:nth-child(1) > .row:nth-child(2) > div:nth-child(1) {
+    padding: var(--size-default);
+    margin: 0px 0 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .ROW2 .COL SPAN */
+section > .container:nth-child(1) > .row:nth-child(2) > div:nth-child(1) > span {
+    border: 1px solid red;
+    font-size: max(2vw, 15pt);
+    font-weight: 500;
+}
+
+/* MASTER .ROW3 */
+section > .container:nth-child(1) > .row:nth-child(3) > div:nth-child(1) {
+    margin: 0px 0 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .ROW3 DIV SPAN */
+section > .container:nth-child(1) > .row:nth-child(3) > div:nth-child(1) > div {
+    border: 1px solid red;
+    width: 70%;
+    text-align: center;
 }
