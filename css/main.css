@@ -1,0 +1,45 @@
+/*! Copyright (c) 2023 JeanCPRodrigues All Rights Reserved. */
+
+/* @import FONT THE GOOGLE [Source+Sans+Pro 300 AND 400] */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap');
+
+/* RESET ALL STYLE */
+* {
+    border: 1px solid red;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* VARIABLE OF THE AMBIENT */
+:root {
+    --white-primary: #fff;
+}
+
+/* DEFINE ALL STYLE IN BODY */
+body {
+    background-image: url('../img/svg/layered-waves-haikei-down.svg');
+    background-size: 100%;
+    background-color: rgb(255, 255, 255);
+    background-position-y: 0px;
+    background-position-x: 0px;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* CONTAINER MAIN MASTER */
+main {
+    border: 1px solid red;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CONTAINER SECTION MASTER */
+section {
+    width: calc(100% - 50%);
+    height: 70%;
+    background: var(--white-primary);
+}
