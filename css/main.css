@@ -17,7 +17,8 @@
 /* VARIABLE OF THE AMBIENT */
 :root {
     --black-primary: #343a40;
-    --back-background: #343a403d;
+    --black-background: #343a403d;
+    --black-secondary: #6c757d;
 
     --white-primary: #fff;
 
@@ -25,6 +26,7 @@
 
     --yellow-primary: #ffc107;
 
+    --blue-system: #0d2f51;
     --blue-primary: #0a58ca;
     --blue-background: #0d6efd7a;
 
@@ -149,6 +151,18 @@ section>.container:nth-child(1)>.row:nth-child(4) {
 section>.container:nth-child(1)>.row:nth-child(4)>div {
     width: calc(85% / 3);
     margin: 0 0 20px 0;
+    position: relative;
+}
+.spanAbsolutePro {
+    position: absolute;
+    top: -10px;
+    right: 0px;
+    background: var(--black-primary);
+    border: 2px solid var(--black-secondary);
+    padding: 2px 7px 2px 7px;
+    border-radius: 10px;
+    font-size: max(.5vw, 10pt);
+    font-weight: 600;
 }
 /* .ROW4 CARD'S IMG */
 section>.container:nth-child(1)>.row:nth-child(4)>div>div>div>img {
@@ -186,6 +200,25 @@ section>.container:nth-child(1)>.row:nth-child(5) {
 /* .ROW5 DIV */
 section>.container:nth-child(1)>.row:nth-child(5)>div {
     width: fit-content;
+    justify-content: center;
+    align-items: center;
+}
+/* .ROW5 DIV SELECT */
+section>.container:nth-child(1)>.row:nth-child(5)>div>div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+/* .ROW5 DIV LABEL */
+section>.container:nth-child(1)>.row:nth-child(5)>div>div>label {
+    background: var(--blue-system);
+    color: var(--white-primary);
+    font-size: max(0.5vw, 12pt);
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+    margin: 0 0 0 10px;
 }
 /* .ROW5 SPAN */
 section>.container:nth-child(1)>.row:nth-child(5)>div>div>span {
@@ -208,7 +241,7 @@ section>.container:nth-child(1)>.row:nth-child(6)>div {
     display: flex;
     align-items: center;
     flex-direction: row;
-    background: var(--blue-background);
+    /* background: var(--blue-background); */
     color: var(--black-primary);
     border-radius: 5px;
     justify-content: space-around;
@@ -248,13 +281,47 @@ section>.container:nth-child(1)>.row:nth-child(7)>div>button {
 /* MASTER .ROW8 */
 section>.container:nth-child(1)>.row:nth-child(8) {
     display: flex;
-    margin: 0 0 5px 0;
+    margin: 10px 0 10px 0;
     align-items: center;
     justify-content: center;
 }
-/* .ROW8 DIV*/
+/* .ROW8 DIV */
 section>.container:nth-child(1)>.row:nth-child(8)>div {
     width: fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 5px;
+    justify-content: space-around;
+}
+/* .ROW8 DIV SPAN */
+section>.container:nth-child(1)>.row:nth-child(8)>div>span {
+    color: var(--black-primary);
+    font-size: max(0.5vw, 12pt);
+    font-weight: 400;
+}
+/* .ROW8 DIV SPAN A */
+section>.container:nth-child(1)>.row:nth-child(8)>div>span>a {
+    color: var(--white-primary);
+    background: var(--green-primary);
+    padding: 2px 5px 5px 5px;
+    text-decoration: none;
+    font-size: max(0.5vw, 12pt);
+    font-weight: 400;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+/* MASTER .ROW9 */
+section>.container:nth-child(1)>.row:nth-child(9) {
+    display: flex;
+    margin: 0 0 20px 0;
+    align-items: center;
+    justify-content: center;
+}
+/* .ROW9 DIV */
+section>.container:nth-child(1)>.row:nth-child(9)>div {
+    width: 50%;
     display: flex;
     align-items: center;
     flex-direction: row;
