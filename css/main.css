@@ -405,7 +405,15 @@ section>.container:nth-child(1)>.row:nth-child(9)>div {
 
 /* RESPONSIVIDADE PARA TELA GRANDE */
 @media only screen and (min-width: 1200px) {
+    
+    /* SECTION */
     section {
         background-image: url('../img/svg/wave-haikei-horizontal.svg');
     }
+
+    /* .ROW6 DIV */
+    section>.container:nth-child(1)>.row:nth-child(6)>div {
+        width: 35%;
+    }
+
 }
