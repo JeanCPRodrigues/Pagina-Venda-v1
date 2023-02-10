@@ -177,6 +177,11 @@ section>.container:nth-child(1)>.row:nth-child(4)>div>div>div>img {
     width: 50px;
 }
 
+/* .ROW4 CARD'S DIV 2 */
+section>.container:nth-child(1)>.row:nth-child(4)>div>div>div:nth-child(2) {
+    margin: 10px 0 0 0;
+}
+
 /* .ROW4 CARD'S SPAN */
 section>.container:nth-child(1)>.row:nth-child(4)>div>div>div>span {
     font-size: max(1vw, 10pt);
@@ -405,7 +410,7 @@ section>.container:nth-child(1)>.row:nth-child(9)>div {
 
 /* RESPONSIVIDADE PARA TELA GRANDE */
 @media only screen and (min-width: 1200px) {
-    
+
     /* SECTION */
     section {
         background-image: url('../img/svg/wave-haikei-horizontal.svg');
@@ -414,6 +419,15 @@ section>.container:nth-child(1)>.row:nth-child(9)>div {
     /* .ROW6 DIV */
     section>.container:nth-child(1)>.row:nth-child(6)>div {
         width: 35%;
+    }
+
+    section>.container:nth-child(1)>.row:nth-child(4)>div {
+        width: auto;
+    }
+
+    section>.container:nth-child(1)>.row:nth-child(4)>div>div>div:nth-child(2) {
+        max-width: 100px !important;
+        line-height: 1 !important;
     }
 
 }
